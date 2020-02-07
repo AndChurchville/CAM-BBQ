@@ -1,22 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+
 .navbar{
-    background-color: #3a1d3a;
+    background-color: #3c1d51;
+}
+.nav-item a{
+    color:#f68e21;
 }
 .navbar-brand{
     color: whitesmoke;
+  
+}
+.tagline{
+    font-family:'Pacifico', sans-serif;
+    font-style: italic;
+    color: white;
+    background-color: #f68e21;;
+    padding: 20px 0 50px 0;
 }
 
+#myCarousel{
+    background-color: #f68e21;
+}
 .carousel-inner{
-    width:100%;
-    max-height: 200px !important;   
-    object-fit: cover;
+    width:90%;
+    margin: 0 auto;
+    max-height: 550px !important;   
+    object-fit: content-fit;
+}
+.main-header{
+    font-family:'Pacifico', sans-serif;
+    padding: 20px;
+    color: #f09723;
+    margin-bottom: 20px;;
+}
+
+.party-packs{
+    margin-top: 20px;
+    color: white; 
+    background-color:  #3c1d51;
+}
+.pack-headers{
+    font-family:'Pacifico', sans-serif;
+    color: #f09723;
+    padding-bottom: 20px;
 }
 
 .list-group  ul{
     padding: 10px;
     margin: 0 auto;
-    columns: 2;
     width: 40%;
     list-style: none;
-     text-align: center;
-     font-size: 1.5rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+li{
+    font-family: 'Alata', sans-serif;
+    font-size: 1.5rem;
+}
+
+.choices{
+    background-color:#7C51A0;
+    padding-bottom: 50px;
+}
+
+ h1, h3, h2{
+    font-family: 'Alata',sans-serif;
+}
+
+#contact{
+    background-color:  #3c1d51;
+    color: whitesmoke;
+}
+#mail-address{
+    list-style-type: none;
+
+}
+.alacarte-menu{
+    background-color:#3c1d51;
+    
+}
+.alacarte-menu .ala-header{
+    color: white;
+    font-family:'Pacifico', sans-serif;
+    font-size: 5em;
+}
+.contact-header{
+    font-family:'Pacifico', sans-serif;
+    letter-spacing: 2px;
+    font-size: 4em;
+}
+
+span{
+    color:#f09723;
+}
+span a{
+    color:#f68e21;
+    text-decoration: none;
+}
+
+.btn{
+    background-color:#f09723;
+    color: white;
+    font-family: 'alata', sans-serif;
+    font-size: 1.5em;;
+}
+.btn:hover{
+    background-color: #f8b864;
+}
+.footer{
+    background-color:  #220d30;
+    color: whitesmoke;
+    padding: 5px;
+    text-align: center;
 }
