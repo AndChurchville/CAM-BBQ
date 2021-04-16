@@ -1,150 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Alata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="cam-style.css">
-    
 
-   
+    <link rel="stylesheet" href="cam-style.css">
     <title>CAM BBQ - Grilling Done Right</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js"></script>
 </head>
+
 <body>
-    
+
     <!--Navigation-->
-    <nav class="navbar navbar-expand-sm">
-        <div class="navbar-brand">
-            <img src="logo-name-01.svg" width="200" height="100" alt="CAM BBQ Logo">
-            <!-- <h3>CAM BBQ AND CATERING</h3> -->
-        </div>
-       
-        <div class="menu-navbar">
-            <ul class="navbar-nav">
+    <nav class="navbar navbar-expand-sm fixed-top">
+
+        <!--Toggler/collapse button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+           <i class="fa fa-bars"></i>
+        </button>
+
+
+        <!-- Links -->
+        <div class="collapse navbar-collapse id="collapsibleNavbar">
+            <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#partyMenu"> Party Pack Menu</a>
+                    <a class="nav-item" href="#">Party Packs</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#alacarteMenu">Al A Carte Menu</a>
+                    <a class="nav-item" href="#">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#contact">Contact Us</a>
+                    <a class="nav-item" href="#">Gallery</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-item" href="#">Contact Us</a>
+                </li>
+
             </ul>
         </div>
+
     </nav>
     <!-- Navigation End -->
 
-<!--Carousel of images-->
-      
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                <!--indicators-->
-                <ul class="carousel-indicators">
-                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel" data-slide-to="1"></li>
-                    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <!--Jumbotron-->
+    <div class="jumbotron">
+        <div class="intro">
+            <img class="logo" src="/assets/cam-logo.svg" alt='hero-img'/>
+            <h1>See what we're all about</h1>
+            <button type="button" class="btn btn-outline-light">Menu</button>
+        </div>
+    </div>
+    
+<div class="container-fluid">
+        <div class="row d-flex justify-content-center" style="background-color: #3c1d51;">
+            <div id="partyMenu" class="display-2 pb-3 text-center text-white main-header">Party Packs</div>
+            <div class=" col-12 display-5 text-center text-white blurb"> Party must consist of 25 people or more</div>
+
+            <div class="col-sm-12 d-flex justify-content-between party-packs">
+
+                <div class="col-sm-4 text-center d-block p-2 mb-3">
+                    <div class="display-4 pack-headers">Basic Party Pack</div>
+                    <h3>$18.00 Per person</h3>
+                    <p>Includes 1 Meat, 2 Sides</p>
+                </div>
+
+                <div class="col-sm-4 text-center d-block p-2 mb-3">
+                    <div class="display-4 pack-headers">Deluxe Party Pack</div>
+                    <h3>$22.00 Per person</h3>
+                    <p>Includes 2 Meats, 2 Sides</p>
+                </div>
+
+                <div class="col-sm-4 text-center d-block p-2 mb-3">
+                    <div class="display-4 pack-headers">Super Party Pack</div>
+                    <h3>$24.00 Per person</h3>
+                    <p>Includes 3 Meats, 3 Sides</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row d-flex justify-content-around pt-4 choices">
+
+            <div class="col-sm-3 meatchoices">
+                <h1 class="display-4 text-white ">Meat Choices</h1>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Pulled Pork</li>
+                    <li class="list-group-item">Pulled Chicken</li>
+                    <li class="list-group-item">Smoked Chicken on the Bone</li>
+                    <li class="list-group-item">Ribs</li>
+                    <li class="list-group-item">Smoked Angus Beef Hamburger</li>
                 </ul>
-                <!--slides-->
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100 h-100 img-fluid" src="https://res.cloudinary.com/drea/image/upload/v1581038640/CAM/cam-crop_pzbin3.jpg" alt="BBQ Meat">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 h-100" src="https://res.cloudinary.com/drea/image/upload/v1581039409/CAM/salad-crop_lj6jke.jpg" alt="Salad spread">
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100 h-100" src="https://res.cloudinary.com/drea/image/upload/v1581038640/CAM/chicken-crop_j4cjro.jpg" alt="BBQ Chicken">
-                    </div>
-                </div>
-                <!--controls-->
-                <a class="carousel-control-prev" href="#myCarousel"  role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-                </a>
-            </div>
-            <!--Carousel of images end-->
-            <div class="col-sm-12 display-1 tagline text-center">Grilling Done Right!</div>
-
-            <div class="container-fluid">
-                <div class="row d-flex justify-content-center" style="background-color: #3c1d51;"> 
-                    <div id="partyMenu" class="display-2 pb-3 text-center text-white main-header">Party Packs</div>
-                    <div class=" col-12 display-5 text-center text-white blurb"> Party must consist of 25 people or more</div>
-                  
-                    <div class="col-sm-12 d-flex justify-content-between party-packs" >
-                        
-                        <div class="col-sm-4 text-center d-block p-2 mb-3">
-                                <div class="display-4 pack-headers">Basic Party Pack</div>
-                                <h3>$18.00 Per person</h3>
-                                <p>Includes 1 Meat, 2 Sides</p>
-                            </div>
-
-                            <div class="col-sm-4 text-center d-block p-2 mb-3">
-                                <div class="display-4 pack-headers">Deluxe Party Pack</div>
-                                <h3>$22.00 Per person</h3>
-                                <p>Includes 2 Meats, 2 Sides</p>
-                            </div>
-
-                            <div class="col-sm-4 text-center d-block p-2 mb-3">
-                                <div class="display-4 pack-headers">Super Party Pack</div>
-                                <h3>$24.00 Per person</h3>
-                                <p>Includes 3 Meats, 3 Sides</p>
-                            </div>  
-                     
-                    </div>
-                </div>
-            
-            <div class="row d-flex justify-content-around pt-4 choices">
-
-                <div class="col-sm-3 meatchoices">
-                    <h1 class="display-4 text-white ">Meat Choices</h1>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Pulled Pork</li>
-                        <li class="list-group-item">Pulled Chicken</li>
-                        <li class="list-group-item">Smoked Chicken on the Bone</li>
-                        <li class="list-group-item">Ribs</li>
-                        <li class="list-group-item">Smoked Angus Beef Hamburger</li>
-                    </ul>
-                </div>
-
-                <div class="col-sm-3 sidechoices">
-                    <h1 class="display-4 text-white">Side Choices</h1>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Spaghetti</li>
-                        <li class="list-group-item">Mac & Cheese</li>
-                        <li class="list-group-item">Grilled Cabbage</li>
-                        <li class="list-group-item">Grilled Vegetable Medley</li>
-                        <li class="list-group-item">Grilled Zucchini</li>
-                        <li class="list-group-item">Grilled Squash</li>
-                    </ul>
-                </div>
-
             </div>
 
+            <div class="col-sm-3 sidechoices">
+                <h1 class="display-4 text-white">Side Choices</h1>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Spaghetti</li>
+                    <li class="list-group-item">Mac & Cheese</li>
+                    <li class="list-group-item">Grilled Cabbage</li>
+                    <li class="list-group-item">Grilled Vegetable Medley</li>
+                    <li class="list-group-item">Grilled Zucchini</li>
+                    <li class="list-group-item">Grilled Squash</li>
+                </ul>
+            </div>
 
-<!-- Ala Carte menu  -->
-            <div id="alacarteMenu" class="row justify-content-center pt-4 pb-5 alacarte-menu">  
-                <h3 class="display-4 text-center ala-header">A La Carte</h3>
-                <div class="col-sm-12 d-flex justify-content-around choices">
-                   
-                    <div class="col-sm-4 pt-4">
+        </div>
+
+
+        <!-- Ala Carte menu  -->
+        <div id="alacarteMenu" class="row justify-content-center pt-4 pb-5 alacarte-menu">
+            <h3 class="display-4 text-center ala-header">A La Carte</h3>
+            <div class="col-sm-12 d-flex justify-content-around choices">
+
+                <div class="col-sm-4 pt-4">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Turkeys (In Season) - $35</li>
                         <li class="list-group-item">Hams (In Season) - $50</li>
                         <li class="list-group-item">Baby Back Ribs - Full Slab - $30</li>
                         <li class="list-group-item">Spare Ribs - Full Slab - $35</li>
-                        <li class="list-group-item">Pulled Pork  - $65</li>
+                        <li class="list-group-item">Pulled Pork - $65</li>
                         <li class="list-group-item">Pulled Chicken - Dark and White - $55</li>
                         <li class="list-group-item">Pulled Chicken - All White - Extra $20</li>
                     </ul>
                 </div>
-               
+
                 <div class="col-sm-4 pt-4">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Cabbage - 13 X 9 Pan - $25</li>
@@ -156,9 +141,9 @@
                     </ul>
                 </div>
             </div>
-            
-         </div>
-            <!-- <li>Turkeys (In Season) - $35</li>
+
+        </div>
+        <!-- <li>Turkeys (In Season) - $35</li>
             <li>Hams (In Season) - $50</li>
             <li>Baby Back Ribs - Full Slab - $30 </li>
             <li>Spare Ribs - Full Slab - $35 </li>
@@ -167,7 +152,7 @@
             <li>Pulled Chicken - All White - Extra $20</li>
                   -->
 
-                    <!-- <ul class="list-group list-group-flush">
+        <!-- <ul class="list-group list-group-flush">
                         <li class="list-group-item">Turkeys (In Season) - $35</li>
                         <li class="list-group-item">Hams (In Season) - $50</li>
                         <li class="list-group-item">Baby Back Ribs - Full Slab - $30 
@@ -189,53 +174,59 @@
                     </ul> -->
 
 
-                 
-            
 
-                <!--Contact Form-->
-                <div class="row contact">
-                    <div class="col-sm-12 p-4 text-center" id="contact">
-                        <div class="my-auto">
-                            <h2 class="mb-4 contact-header">Contact Information</h2>
-                            <ul class="fa-ul mb-4 ml-0">
-                                <li id="mail-address">
-                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                                    <span><a href="mailto:db_bradley@comcast.net">db_bradley@comcast.net</a></span>
-                                    
-                                </li>
-                                <li id="mail-address">
-                                    <i class="fa fa-facebook" aria-hidden="true"></i></i>
-                                    <span> <a href="https://www.facebook.com/num1chef39/">CAM Barbecue and Catering</a> </span>
-                                </li>
-                              
-                            </ul>
-                            <form class="contact-form d-flex flex-column align-items-center" action="https://formspree.io/db_bradley@comcast.net" method="POST">
-                                <div class="form-group w-75">
-                                    <input type="name" class="form-control" placeholder="Name" name="name" required />
-                                </div>
-                                <div class="form-group w-75">
-                                    <input type="email" class="form-control" placeholder="Email" name="_replyto" required />
-                                </div>
-                                <div class="form-group w-75">
-                                    <textarea class="form-control" type="text" placeholder="Message" rows="4" name="name" required></textarea>
-                                </div>
 
-                                <button type="submit" class="btn btn-submit btn-info w-75 email-btn">Submit</button>
-                            </form>
+
+        <!--Contact Form-->
+        <div class="row contact">
+            <div class="col-sm-12 p-4 text-center" id="contact">
+                <div class="my-auto">
+                    <h2 class="mb-4 contact-header">Contact Information</h2>
+                    <ul class="fa-ul mb-4 ml-0">
+                        <li id="mail-address">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                            <span><a href="mailto:db_bradley@comcast.net">db_bradley@comcast.net</a></span>
+
+                        </li>
+                        <li id="mail-address">
+                            <i class="fa fa-facebook" aria-hidden="true"></i></i>
+                            <span> <a href="https://www.facebook.com/num1chef39/">CAM Barbecue and Catering</a> </span>
+                        </li>
+
+                    </ul>
+                    <form class="contact-form d-flex flex-column align-items-center"
+                        action="https://formspree.io/db_bradley@comcast.net" method="POST">
+                        <div class="form-group w-75">
+                            <input type="name" class="form-control" placeholder="Name" name="name" required />
                         </div>
-                    </div>
+                        <div class="form-group w-75">
+                            <input type="email" class="form-control" placeholder="Email" name="_replyto" required />
+                        </div>
+                        <div class="form-group w-75">
+                            <textarea class="form-control" type="text" placeholder="Message" rows="4" name="name"
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-submit btn-info w-75 email-btn">Submit</button>
+                    </form>
                 </div>
             </div>
-            <div class="row footer">
-                <div class="col-sm-12 footer">2020. CAM BBQ and Catering. All rights reserved</div>
-            </div>
         </div>
+    </div>
+    <div class="row footer">
+        <div class="col-sm-12 footer">2020. CAM BBQ and Catering. All rights reserved</div>
+    </div>
+    </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
-
-
-
