@@ -22,12 +22,12 @@
 
         <!--Toggler/collapse button-->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-           <i class="fa fa-bars"></i>
+            <i class="fa fa-bars"></i>
         </button>
 
 
         <!-- Links -->
-        <div class="collapse navbar-collapse id="collapsibleNavbar">
+        <div class="collapse navbar-collapse id=" collapsibleNavbar">
             <ul class="navbar-nav mx-auto">
                 <li class="nav-item">
                     <a class="nav-item" href="#">Party Packs</a>
@@ -51,18 +51,37 @@
     <!--Jumbotron-->
     <div class="jumbotron">
         <div class="intro">
-            <img class="logo" src="/assets/cam-logo.svg" alt='hero-img'/>
+            <img class="logo" src="/assets/cam-logo.svg" alt='hero-img' />
             <h1>See what we're all about</h1>
             <button type="button" class="btn btn-outline-light">Menu</button>
         </div>
     </div>
-    
-<div class="container-fluid">
+    <!--End Jumbotron-->
+
+    <!--About Section-->
+    <div class="row about">
+        <!-- left side -->
+        <div class="col-lg-4 col-md-4 col-sm-12 ">
+            <img src="/assets/salad-crop.jpg" class="img-fluid" />
+        </div>
+        <div class="col-lg-6 cold-md-8 col-sm-12 desc">
+            <h2>Catering Done Right</h2>
+            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat.</p>
+        </div>
+    </div>
+
+
+    <!-- End About Section-->
+
+    <div class="container-fluid">
         <div class="row d-flex justify-content-center" style="background-color: #3c1d51;">
             <div id="partyMenu" class="display-2 pb-3 text-center text-white main-header">Party Packs</div>
-            <div class=" col-12 display-5 text-center text-white blurb"> Party must consist of 25 people or more</div>
+            <div class="col-12 display-5 text-center text-white blurb"> Party must consist of 25 people or more</div>
 
-            <div class="col-sm-12 d-flex justify-content-between party-packs">
+            <div class="row d-flex justify-content-between party-packs">
 
                 <div class="col-sm-4 text-center d-block p-2 mb-3">
                     <div class="display-4 pack-headers">Basic Party Pack</div>
@@ -85,93 +104,77 @@
             </div>
         </div>
 
-        <div class="row d-flex justify-content-around pt-4 choices">
+        <div class="row d-flex justify-content-center pt-4 choices">
 
-            <div class="col-sm-3 meatchoices">
-                <h1 class="display-4 text-white ">Meat Choices</h1>
-                <ul class="list-group list-group-flush">
+            <div class="col-lg-6 col-md-6 col-sm-12 meatchoices">
+                <h1 class="display-4 text-center text-white ">Meats</h1>
+                <ul class="list-group list-group-flush text-center">
+                    <li class="list-group-item">Ribs</li>
                     <li class="list-group-item">Pulled Pork</li>
                     <li class="list-group-item">Pulled Chicken</li>
                     <li class="list-group-item">Smoked Chicken on the Bone</li>
-                    <li class="list-group-item">Ribs</li>
+
                     <li class="list-group-item">Smoked Angus Beef Hamburger</li>
                 </ul>
             </div>
 
-            <div class="col-sm-3 sidechoices">
-                <h1 class="display-4 text-white">Side Choices</h1>
-                <ul class="list-group list-group-flush">
+            <div class="col-lg-6 col-md-6 col-sm-12 sidechoices">
+                <h1 class="display-4 text-center text-white">Sides</h1>
+                <ul class="list-group list-group-flush text-center">
                     <li class="list-group-item">Spaghetti</li>
                     <li class="list-group-item">Mac & Cheese</li>
                     <li class="list-group-item">Grilled Cabbage</li>
-                    <li class="list-group-item">Grilled Vegetable Medley</li>
                     <li class="list-group-item">Grilled Zucchini</li>
                     <li class="list-group-item">Grilled Squash</li>
+                    <li class="list-group-item">Grilled Vegetable Medley</li>
                 </ul>
             </div>
 
         </div>
 
+        <!-- new Menu -->
 
-        <!-- Ala Carte menu  -->
-        <div id="alacarteMenu" class="row justify-content-center pt-4 pb-5 alacarte-menu">
-            <h3 class="display-4 text-center ala-header">A La Carte</h3>
-            <div class="col-sm-12 d-flex justify-content-around choices">
+        
 
-                <div class="col-sm-4 pt-4">
+
+
+
+
+        <!-- A LA CARTE MENU  -->
+        
+            
+            <div class="row d-flex alachoices">
+<h3 class="col-lg-12 display-4 text-center text-white ala-header">A La Carte</h3>
+                <div class="col-md-6 text-center pt-4">
+                    <h1 class="display-4 text-center text-white">Meats</h1>
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item">Turkeys (In Season) - $35</li>
                         <li class="list-group-item">Hams (In Season) - $50</li>
                         <li class="list-group-item">Baby Back Ribs - Full Slab - $30</li>
                         <li class="list-group-item">Spare Ribs - Full Slab - $35</li>
-                        <li class="list-group-item">Pulled Pork - $65</li>
-                        <li class="list-group-item">Pulled Chicken - Dark and White - $55</li>
+                        
+                        <li class="list-group-item">Pulled Chicken - Dark & White - $55</li>
                         <li class="list-group-item">Pulled Chicken - All White - Extra $20</li>
-                    </ul>
+                   <li class="list-group-item">Pulled Pork - $65</li> 
+                </ul>
                 </div>
 
-                <div class="col-sm-4 pt-4">
+                <div class="col-md-6 text-center pt-4">
+                    <h1 class="display-4 text-center text-white">Sides</h1>
+                    <h4 class="text-center text-white">All sides come in 13 X 9 pan</h4>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cabbage - 13 X 9 Pan - $25</li>
-                        <li class="list-group-item">Spaghetti - 13 X 9 Pan - $35</li>
-                        <li class="list-group-item">Mixed Vegetable - 13 X 9 Pan - $20</li>
-                        <li class="list-group-item">Macaroni & Cheese - 13 X 9 Pan - $35</li>
-                        <li class="list-group-item">Grilled Squash - 13 X 9 Pan - $20</li>
-                        <li class="list-group-item">Grilled Zucchini - 13 X 9 Pan - $20</li>
+                        <li class="list-group-item">Cabbage - $25</li>
+                        <li class="list-group-item">Spaghetti -  $35</li>
+                        <li class="list-group-item">Mixed Vegetable - $20</li>
+                        <li class="list-group-item">Macaroni & Cheese -  $35</li>
+                        <li class="list-group-item">Grilled Squash - $20</li>
+                        <li class="list-group-item">Grilled Zucchini - $20</li>
                     </ul>
                 </div>
             </div>
 
-        </div>
-        <!-- <li>Turkeys (In Season) - $35</li>
-            <li>Hams (In Season) - $50</li>
-            <li>Baby Back Ribs - Full Slab - $30 </li>
-            <li>Spare Ribs - Full Slab - $35 </li>
-            <li>Pulled Pork  - $65</li>
-            <li>Pulled Chicken - Dark and White - $55</li>
-            <li>Pulled Chicken - All White - Extra $20</li>
-                  -->
-
-        <!-- <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Turkeys (In Season) - $35</li>
-                        <li class="list-group-item">Hams (In Season) - $50</li>
-                        <li class="list-group-item">Baby Back Ribs - Full Slab - $30 
-                        </li>
-                        <li class="list-group-item">Spare Ribs - Full Slab - $35 
-                        </li>
-                        <li class="list-group-item">Pulled Pork  - $65</li>
-                        <li class="list-group-item">Pulled Chicken - Dark and White - $55</li>
-                        <li class="list-group-item">Pulled Chicken - All White - Extra $20</li>
-                    </ul>
-
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cabbage - 13 X 9 Pan - $25</li>
-                        <li class="list-group-item">Spaghetti - 13 X 9 Pan - $35</li>
-                        <li class="list-group-item">Mixed Vegetable - 13 X 9 Pan - $20</li>
-                        <li class="list-group-item">Macaroni & Cheese - 13 X 9 Pan - $35</li>
-                        <li class="list-group-item">Grilled Squash - 13 X 9 Pan - $20</li>
-                        <li class="list-group-item">Grilled Zucchini - 13 X 9 Pan - $20</li>
-                    </ul> -->
+        
+       
 
 
 

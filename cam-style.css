@@ -1,13 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Alata&display=swap");
+:root {
+    --purple: #3c1d51;
+    --logopurple:  #7c51a0; 
+    --darkpurple: #220d30;
+    --orange:  #f68e21;
+   --lightorange:#f8b864;
+}
 * {
   margin: 0;
   padding: 0;
 }
+/* jumbotron section */
 .jumbotron {
     position: relative;
   background-image: url("/assets/bbq-hero-img.jpg");
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   color: white;
@@ -23,66 +31,79 @@
   position:absolute;
   top:0;
   left:0;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(18, 1, 29, 0.85);
+  background: rgba(48, 6, 49, 0.774);
 }
 .logo {
   width: 450px;
 }
+img.logo{
+    filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
+}
+
+/* navbar section */
 .navbar {
-  background-color: #3c1d51;
+  background-color: var(--purple);
 }
 .nav-item a {
-  color: #f68e21;
+  color: var(--orange);
   margin: 0 20px;
   margin-top: 30px;
 }
 .navbar-brand {
   color: whitesmoke;
 }
-.tagline {
-  font-family: "Pacifico", sans-serif;
-  font-style: italic;
-  color: white;
-  background-color: #f68e21;
-  padding: 20px 0 50px 0;
+
+/* About Section */
+.about{
+    margin: 4em 0;
+    padding: 1em;
+    position: relative;
+}
+.about img{
+    height: 100%;
+    width: 100%;
+    border-radius: 20%;
+}
+.about h2{
+    font-family: 'Pacifico', sans-serif;
+    margin: 25px;
+    font-size: 4rem;
+    text-align: center;
+    color: var(--purple);
+}
+.about .desc{
+    padding: 2em;
+    border-left: 4px solid var(--orange);
 }
 
-#myCarousel {
-  background-color: #f68e21;
-}
-.carousel-inner {
-  width: 90%;
-  margin: 0 auto;
-  max-height: 550px !important;
-  object-fit: content-fit;
-}
+
 .main-header {
   font-family: "Pacifico", sans-serif;
   padding: 20px;
-  color: #f09723;
+  color: var(--orange);
   margin-bottom: 20px;
 }
 
 .party-packs {
   margin-top: 20px;
   color: white;
-  background-color: #3c1d51;
+  background-color: var(--purple);
 }
 .pack-headers {
   font-family: "Pacifico", sans-serif;
-  color: #f09723;
+  color: var(--orange);
   padding-bottom: 20px;
 }
 
 .list-group ul {
   padding: 10px;
-  margin: 0 auto;
+
   width: 40%;
   list-style: none;
   text-align: center;
@@ -95,7 +116,7 @@ li {
 }
 
 .choices {
-  background-color: #7c51a0;
+  background-color: var(--logopurple);
   padding-bottom: 50px;
 }
 
@@ -105,47 +126,68 @@ h2 {
   font-family: "Alata", sans-serif;
 }
 
-#contact {
-  background-color: #3c1d51;
-  color: whitesmoke;
+/* new menu */
+.newmenu{
+    background-color: rgb(56, 161, 209);
+    width: 100%;
+    padding: 20px;
 }
-#mail-address {
-  list-style-type: none;
-}
+
+
+
+
+
 .alacarte-menu {
-  background-color: #3c1d51;
+  background-color: var(--orange);
+}
+.ala-header{
+    background-color: var(--orange);
+    font-family: "Pacifico";
 }
 .alacarte-menu .ala-header {
   color: white;
   font-family: "Pacifico", sans-serif;
   font-size: 5em;
 }
+
+.alachoices {
+    background-color: var(--lightorange);
+    padding-bottom: 50px;
+  }
+/* contact section */
 .contact-header {
   font-family: "Pacifico", sans-serif;
   letter-spacing: 2px;
   font-size: 4em;
 }
-
+#contact {
+    background-color: var(--purple);
+    color: whitesmoke;
+  }
+  #mail-address {
+    list-style-type: none;
+  }
 span {
-  color: #f09723;
+  color: var(--orange);
 }
 span a {
-  color: #f68e21;
+  color:var(--orange);
   text-decoration: none;
 }
 
 .btn {
-  background-color: #f09723;
+  background-color:var(--orange);
   color: white;
   font-family: "alata", sans-serif;
   font-size: 1.5em;
 }
 .btn:hover {
-  background-color: #f8b864;
+  background-color:var(--lightorange);
 }
 .footer {
-  background-color: #220d30;
+  background-color:var(--darkpurple);
   color: whitesmoke;
   padding: 5px;
   text-align: center;
 }
+
