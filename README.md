@@ -1,4 +1,4 @@
-# CAM BBQ And Catering
+# CAM BBQ And Event Catering Website
 
 Website for catering company made with HTML/CSS and Bootstrap 4.
 
