@@ -6,6 +6,14 @@
     --darkpurple: #220d30;
     --orange:  #f68e21;
    --lightorange:#f8b864;
+
+   --displayfont: "Pacifico", sans-serif;
+   --sansfont : "alata", sans-serif;
+}
+html  {
+
+  overflow-x: hidden; 
+
 }
 * {
   margin: 0;
@@ -45,13 +53,19 @@
 img.logo{
     filter: drop-shadow(0px 0px 5px rgba(0, 0, 0, 0.4));
 }
-
+.hero-btn{
+  background-color:var(--orange);
+  font-family: var(--sansfont);
+  font-size: 1.5em;
+}
 /* navbar section */
 .navbar {
   background-color: var(--purple);
+  font-family: var(--sansfont);
 }
 .nav-item a {
   color: var(--orange);
+  font-size: 1.5rem;
   margin: 0 20px;
   margin-top: 30px;
 }
@@ -61,129 +75,150 @@ img.logo{
 
 /* About Section */
 .about{
-    margin: 4em 0;
-    padding: 1em;
+
+    padding: 2.5em;
     position: relative;
+    background-color: var(--logopurple);
 }
 .about img{
     height: 100%;
     width: 100%;
     border-radius: 20%;
+    border: 3px solid var(--orange);
 }
 .about h2{
     font-family: 'Pacifico', sans-serif;
     margin: 25px;
-    font-size: 4rem;
+    font-size: 4.5rem;
     text-align: center;
-    color: var(--purple);
+    color: var(--orange);
+}
+.desc{
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Alata", sans-serif;
+  color: white;
+
 }
 .about .desc{
     padding: 2em;
-    border-left: 4px solid var(--orange);
+  
+    line-height: 3rem;
 }
 
+/* main menu */
 
-.main-header {
-  font-family: "Pacifico", sans-serif;
-  padding: 20px;
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+ 
+}
+.menu-header{
+  font-family: var(--displayfont);
+  background-color: var(--orange);
+  margin-bottom: 50px;
+}
+
+.menu-item{
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 20px;
+  font-family: var(--sansfont);
+  color: var(--logopurple)
+}
+.menu-item h4{
+  display: inline-block;
+  padding-right: 8px;
+  font-size: 2rem;
+  max-width: 80%;
+  text-transform: capitalize;
+  margin-bottom: 4px;
+  position: relative;
+}
+
+.price{
+  text-transform: capitalize;
+  font-size: 1.8rem;
+  padding-left: 48px;
+  z-index: 0;
+}
+
+/* Sandwich pack */
+
+.sandwich-menu{
+  background-color: var(--darkpurple);
+  color: var(--orange)
+}
+
+.sandwich-header {
+  font-family: var(--displayfont);
+  padding: 50px;
   color: var(--orange);
   margin-bottom: 20px;
 }
-
-.party-packs {
-  margin-top: 20px;
-  color: white;
-  background-color: var(--purple);
+.blurb{
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: var(--lightorange);
 }
-.pack-headers {
-  font-family: "Pacifico", sans-serif;
-  color: var(--orange);
-  padding-bottom: 20px;
+
+.choices {
+  background-color: var(--darkpurple);
+  font-family: var(--sansfont);
+  padding-bottom: 50px;
+}
+
+.pack-title{
+  font-family: var(--sansfont);
+  color:var(--lightorange);
+}
+.pack-price{
+  font-size: 2.5rem;
+  margin-bottom: 20px;;
 }
 
 .list-group ul {
   padding: 10px;
-
   width: 40%;
   list-style: none;
   text-align: center;
   font-size: 1.5rem;
 }
 
-li {
-  font-family: "Alata", sans-serif;
+.list-group-item{
+  background-color: var(--logopurple);
+  color: var(--lightorange);
   font-size: 1.5rem;
 }
 
-.choices {
-  background-color: var(--logopurple);
-  padding-bottom: 50px;
-}
 
-h1,
+
+
+
+
+h1 {
+  font-family: var(--displayfont);
+}
 h3,
 h2 {
-  font-family: "Alata", sans-serif;
-}
-
-/* new menu */
-.newmenu{
-    background-color: rgb(56, 161, 209);
-    width: 100%;
-    padding: 20px;
+  font-family: var(--sansfont)
 }
 
 
 
 
-
-.alacarte-menu {
-  background-color: var(--orange);
-}
-.ala-header{
-    background-color: var(--orange);
-    font-family: "Pacifico";
-}
-.alacarte-menu .ala-header {
-  color: white;
-  font-family: "Pacifico", sans-serif;
-  font-size: 5em;
-}
-
-.alachoices {
-    background-color: var(--lightorange);
-    padding-bottom: 50px;
-  }
-/* contact section */
-.contact-header {
-  font-family: "Pacifico", sans-serif;
-  letter-spacing: 2px;
-  font-size: 4em;
-}
-#contact {
-    background-color: var(--purple);
-    color: whitesmoke;
-  }
-  #mail-address {
-    list-style-type: none;
-  }
-span {
+/* span {
   color: var(--orange);
 }
 span a {
   color:var(--orange);
   text-decoration: none;
-}
+} */
 
-.btn {
-  background-color:var(--orange);
-  color: white;
-  font-family: "alata", sans-serif;
-  font-size: 1.5em;
-}
-.btn:hover {
-  background-color:var(--lightorange);
-}
 .footer {
   background-color:var(--darkpurple);
   color: whitesmoke;
@@ -191,3 +226,54 @@ span a {
   text-align: center;
 }
 
+/* Gallery */
+.gallery-wrapper{
+  background-color: var(--orange);
+  padding: 20px;
+}
+.gallery-header{
+  font-family: var(--displayfont);
+  color: white;
+  padding-bottom: 20px;
+
+}
+.collage > div {
+  padding: 0 4px !important;
+}
+.img-fluid{
+  margin-top: 8px;
+  border: 5px solid var(--logopurple);
+}
+
+/* new contact form */
+.contact-form{
+  background-color: var(--darkpurple);
+  font-family: var(--sansfont);
+  color: var(--lightorange);
+}
+.contact-form h2{
+  color:var(--orange);
+  font-family: var(--displayfont);
+  font-size: 4.5rem;
+}
+.contact-form label{
+  padding-top: 5px;
+}
+.contact-form a{
+  text-decoration: none;
+  color: var(--orange);
+}
+.contact-form a:hover{
+
+  color: var(--lightorange);
+}
+
+.contact-form .btn{
+  color: white;  
+  background-color:var(--orange);
+  font-family: var(--sansfont);
+  font-size: 1.5em;
+}
+.contact-form .btn:hover{
+  color: white;  background-color:var(--lightorange);
+}

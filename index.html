@@ -29,17 +29,15 @@
         <!-- Links -->
         <div class="collapse navbar-collapse id=" collapsibleNavbar">
             <ul class="navbar-nav mx-auto">
+           
                 <li class="nav-item">
-                    <a class="nav-item" href="#">Party Packs</a>
+                    <a class="nav-item" href="#main-menu">Menu</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item" href="#">Menu</a>
+                    <a class="nav-item" href="#gallery">Gallery</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-item" href="#">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-item" href="#">Contact Us</a>
+                    <a class="nav-item" href="#contact">Contact Us</a>
                 </li>
 
             </ul>
@@ -53,172 +51,246 @@
         <div class="intro">
             <img class="logo" src="/assets/cam-logo.svg" alt='hero-img' />
             <h1>See what we're all about</h1>
-            <button type="button" class="btn btn-outline-light">Menu</button>
+            <a href="#main-menu">
+            <button type="button" class="hero-btn btn btn-outline-light">Menu</button></a>
         </div>
     </div>
     <!--End Jumbotron-->
 
     <!--About Section-->
-    <div class="row about">
+    <div class="row justify-content-center about">
         <!-- left side -->
         <div class="col-lg-4 col-md-4 col-sm-12 ">
-            <img src="/assets/salad-crop.jpg" class="img-fluid" />
+            <img src="/assets/ribs-img.jpg" class="img-fluid" />
         </div>
         <div class="col-lg-6 cold-md-8 col-sm-12 desc">
-            <h2>Catering Done Right</h2>
-            <p>ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</p>
+            <h2>Catering Done Right!</h2>
+            <p>Our mission at CAM Barbecue & Event Catering is to first offer a high quality of local raised food,
+                provide outstanding grilling and services for your everyday eating pleasures or catered events. We will
+                always hold ourselves above the status quo. We will go above and beyond because we believe in “Grilling
+                Done Right!”</p>
         </div>
     </div>
 
 
     <!-- End About Section-->
 
-    <div class="container-fluid">
-        <div class="row d-flex justify-content-center" style="background-color: #3c1d51;">
-            <div id="partyMenu" class="display-2 pb-3 text-center text-white main-header">Party Packs</div>
-            <div class="col-12 display-5 text-center text-white blurb"> Party must consist of 25 people or more</div>
+    <!-- Start Menu Section-->
 
-            <div class="row d-flex justify-content-between party-packs">
-
-                <div class="col-sm-4 text-center d-block p-2 mb-3">
-                    <div class="display-4 pack-headers">Basic Party Pack</div>
-                    <h3>$18.00 Per person</h3>
-                    <p>Includes 1 Meat, 2 Sides</p>
+    <div id="main-menu" class="container-fluid basic-menu">
+        <div class="row">
+            <div class="col-12">
+                <div class="row d-flex justify-content-center menu-header">
+                    <div class="display-2 pb-2 text-center text-white">
+                        Menu
+                    </div>
                 </div>
-
-                <div class="col-sm-4 text-center d-block p-2 mb-3">
-                    <div class="display-4 pack-headers">Deluxe Party Pack</div>
-                    <h3>$22.00 Per person</h3>
-                    <p>Includes 2 Meats, 2 Sides</p>
-                </div>
-
-                <div class="col-sm-4 text-center d-block p-2 mb-3">
-                    <div class="display-4 pack-headers">Super Party Pack</div>
-                    <h3>$24.00 Per person</h3>
-                    <p>Includes 3 Meats, 3 Sides</p>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="menu-item">
+                            <h4>Ribs (Pork)</h4>
+                            <span></span>
+                            <span class="price">$25 / Slab</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="menu-item">
+                            <h4>Pulled Pork</h4>
+                            <span></span>
+                            <span class="price">$12 / lb</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="menu-item">
+                            <h4>Pulled Chicken</h4>
+                            <span></span>
+                            <span class="price">$10 / lb</span>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
+    </div>
+    <!-- End Menu Section-->
 
-        <div class="row d-flex justify-content-center pt-4 choices">
+    <!-- Start Pack Section-->
+    <div class="row d-flex justify-content-center sandwich-menu">
+        <div id="partyMenu" class="display-3 pb-2 text-center  sandwich-header">Cam's Sandwich Pack</div>
+        <div class="col-12 display-5 text-center blurb"> Choice of 1 meat and 2 sides</div>
 
-            <div class="col-lg-6 col-md-6 col-sm-12 meatchoices">
-                <h1 class="display-4 text-center text-white ">Meats</h1>
+        <div class="row col-lg-12 d-flex justify-content-center pt-4 choices">
+
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <h1 class="display-4 text-center pack-title ">4-6 People</h1>
+                <div class="text-center pack-price">$40</div>
                 <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item">Ribs</li>
-                    <li class="list-group-item">Pulled Pork</li>
-                    <li class="list-group-item">Pulled Chicken</li>
-                    <li class="list-group-item">Smoked Chicken on the Bone</li>
-
-                    <li class="list-group-item">Smoked Angus Beef Hamburger</li>
+                    <li class="list-group-item">6 Buns</li>
+                    <li class="list-group-item">2 lb Pork or Chicken</li>
+                    <li class="list-group-item">1 qt Grilled Cabbage</li>
+                    <li class="list-group-item">1 qt Baked Beans</li>
+                    <li class="list-group-item">1 qt Coleslaw</li>
                 </ul>
             </div>
 
             <div class="col-lg-6 col-md-6 col-sm-12 sidechoices">
-                <h1 class="display-4 text-center text-white">Sides</h1>
+                <h1 class="display-4 text-center pack-title">12-15 People</h1>
+                <div class="text-center pack-price">$60</div>
                 <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item">Spaghetti</li>
-                    <li class="list-group-item">Mac & Cheese</li>
-                    <li class="list-group-item">Grilled Cabbage</li>
-                    <li class="list-group-item">Grilled Zucchini</li>
-                    <li class="list-group-item">Grilled Squash</li>
-                    <li class="list-group-item">Grilled Vegetable Medley</li>
+                    <li class="list-group-item">12 Buns</li>
+                    <li class="list-group-item">4 lb Pork or Chicken</li>
+                    <li class="list-group-item">2 qt Grilled Cabbage</li>
+                    <li class="list-group-item">2 qt Baked Beans</li>
+                    <li class="list-group-item">2 qt Coleslaw</li>
+
                 </ul>
             </div>
 
         </div>
 
-        <!-- new Menu -->
 
-        
+    </div>
 
-
-
-
-
-        <!-- A LA CARTE MENU  -->
-        
-            
-            <div class="row d-flex alachoices">
-<h3 class="col-lg-12 display-4 text-center text-white ala-header">A La Carte</h3>
-                <div class="col-md-6 text-center pt-4">
-                    <h1 class="display-4 text-center text-white">Meats</h1>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Turkeys (In Season) - $35</li>
-                        <li class="list-group-item">Hams (In Season) - $50</li>
-                        <li class="list-group-item">Baby Back Ribs - Full Slab - $30</li>
-                        <li class="list-group-item">Spare Ribs - Full Slab - $35</li>
-                        
-                        <li class="list-group-item">Pulled Chicken - Dark & White - $55</li>
-                        <li class="list-group-item">Pulled Chicken - All White - Extra $20</li>
-                   <li class="list-group-item">Pulled Pork - $65</li> 
-                </ul>
-                </div>
-
-                <div class="col-md-6 text-center pt-4">
-                    <h1 class="display-4 text-center text-white">Sides</h1>
-                    <h4 class="text-center text-white">All sides come in 13 X 9 pan</h4>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item">Cabbage - $25</li>
-                        <li class="list-group-item">Spaghetti -  $35</li>
-                        <li class="list-group-item">Mixed Vegetable - $20</li>
-                        <li class="list-group-item">Macaroni & Cheese -  $35</li>
-                        <li class="list-group-item">Grilled Squash - $20</li>
-                        <li class="list-group-item">Grilled Zucchini - $20</li>
-                    </ul>
-                </div>
+    <!--new gallery--> 
+    <div id="gallery" class="container-fluid  gallery-wrapper">
+    <div class="display-3 text-center gallery-header">Cam's Gallery</div>
+   
+        <div class="row justify-content-center collage">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="img-fluid" src="/assets/ribs-img.jpg" alt="ribs-img" />
+                <img class="img-fluid" src="/assets/cam-crop.jpg" alt="meat spread" />
+                <img class="img-fluid" src="/assets/salad-crop.jpg" />
             </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="img-fluid" src="/assets/cam-green-beans.jpg" />
+                <img class="img-fluid" src="/assets/pasta-img.jpg" /> 
+                <img class="img-fluid" src="/assets/chicken-crop.jpg" />
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                <img class="img-fluid" src="/assets/meat-platter-crop.jpg" />
+                <img class="img-fluid" src="/assets/sides-img.jpg" />
+                <img class="img-fluid" src="/assets/grill-meat-img.jpg" />
 
-        
-       
-
-
-
-
-
-        <!--Contact Form-->
-        <div class="row contact">
-            <div class="col-sm-12 p-4 text-center" id="contact">
-                <div class="my-auto">
-                    <h2 class="mb-4 contact-header">Contact Information</h2>
-                    <ul class="fa-ul mb-4 ml-0">
-                        <li id="mail-address">
-                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
-                            <span><a href="mailto:db_bradley@comcast.net">db_bradley@comcast.net</a></span>
-
-                        </li>
-                        <li id="mail-address">
-                            <i class="fa fa-facebook" aria-hidden="true"></i></i>
-                            <span> <a href="https://www.facebook.com/num1chef39/">CAM Barbecue and Catering</a> </span>
-                        </li>
-
-                    </ul>
-                    <form class="contact-form d-flex flex-column align-items-center"
-                        action="https://formspree.io/db_bradley@comcast.net" method="POST">
-                        <div class="form-group w-75">
-                            <input type="name" class="form-control" placeholder="Name" name="name" required />
-                        </div>
-                        <div class="form-group w-75">
-                            <input type="email" class="form-control" placeholder="Email" name="_replyto" required />
-                        </div>
-                        <div class="form-group w-75">
-                            <textarea class="form-control" type="text" placeholder="Message" rows="4" name="name"
-                                required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-submit btn-info w-75 email-btn">Submit</button>
-                    </form>
-                </div>
             </div>
         </div>
     </div>
-    <div class="row footer">
+
+    <!-- contact section -->
+    <section id="contact" class=" pt-2 contact-form">
+        <!-- section heading -->
+        <h2 class="text-center my-4">Contact Us</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-md-5 mb-5">
+            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+                <div class="row">
+                    <!-- grid column -->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="text" name="name" id="name" class="form-control">
+                            <label for="name" class="">Name</label>
+                        </div>
+                    </div>
+                    <!-- grid-column -->
+
+                    <!-- grid column -->
+                    <div class="col-md-6">
+                        <div class="md-form mb-0">
+                            <input type="email" name="email" class="form-control">
+                            <label for="email" class="">Email</label>
+                        </div>
+                    </div>
+                    <!-- grid column-->
+                </div>
+                <!--Grid row-->
+
+                <!--grid row-->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="md-form mb-0">
+                            <input type="text" id="subject" name="subject">
+                            <label for="subject">Subject</label>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Grid row-->
+                <div class="row">
+                    <!--grid column-->
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <textarea type="text" name="message" id="message" rows="2" class="form-control md-textarea"></textarea>
+                            <label for="message">Message</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <div class="text-center text-md-center">
+                <a onclick="document.getElementById('contact-form').submit()" class="btn">Send</a>
+            </div>
+            <div class="status"></div>
+        </div>
+
+        <!--grid column-->
+        <div class="col-md-3 text-center">
+            <ul class="list-unstyled mb-0">
+                <li>
+                    <i class="fa fa-facebook fa-2x"></i>
+                    <p><a href="https://www.facebook.com/num1chef39/">CAM Barbecue and Catering</a></p>
+                </li>
+
+                <li>
+                    <i class="fa fa-envelope-o fa-2x" aria-hidden="true"></i>
+                    <p>db_bradley@comcast.net</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    </section>
+
+<!-- 
+    Contact Form
+    <div class="row contact">
+        <div class="col-sm-12 p-4 text-center" id="contact">
+            <div class="my-auto">
+                <h2 class="mb-4 contact-header">Contact Information</h2>
+                <ul class="fa-ul mb-4 ml-0">
+                    <li id="mail-address">
+                        <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        <span><a href="mailto:db_bradley@comcast.net">db_bradley@comcast.net</a></span>
+
+                    </li>
+                    <li id="mail-address">
+                        <i class="fa fa-facebook" aria-hidden="true"></i></i>
+                        <span> <a href="https://www.facebook.com/num1chef39/">CAM Barbecue and Catering</a> </span>
+                    </li>
+
+                </ul>
+                <form class="contact-form d-flex flex-column align-items-center"
+                    action="https://formspree.io/db_bradley@comcast.net" method="POST">
+                    <div class="form-group w-75">
+                        <input type="name" class="form-control" placeholder="Name" name="name" required />
+                    </div>
+                    <div class="form-group w-75">
+                        <input type="email" class="form-control" placeholder="Email" name="_replyto" required />
+                    </div>
+                    <div class="form-group w-75">
+                        <textarea class="form-control" type="text" placeholder="Message" rows="4" name="name"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-submit btn-info w-75 email-btn">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div> -->
+    <div class="container-fluid">
+          <div class="row footer">
         <div class="col-sm-12 footer">2020. CAM BBQ and Catering. All rights reserved</div>
     </div>
+    </div>
+  
     </div>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
